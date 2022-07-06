@@ -163,3 +163,31 @@ for i in 1..10 do
     i+=1
 end
 puts
+
+
+# ----------------------------------------------------------
+# methods
+# ----------------------------------------------------------
+
+print "\nmethods\n\n"
+
+def hello_world()
+    puts "hello world"
+end
+hello_world   #function call can be made with or with-out ()
+hello_world()
+
+def add(a,b)
+    a+b       #return key word is not required
+end
+puts add(10,5)
+
+def add(a,b=1)
+    a+b
+end
+puts add(10)
+puts add(10,20)
+
+puts hello_world
+
+    
