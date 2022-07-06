@@ -190,4 +190,23 @@ puts add(10,20)
 
 puts hello_world
 
-    
+# ----------------------------------------------------------
+# each map select collect 
+# ----------------------------------------------------------
+
+print "\n each map select collect \n\n"
+
+a=[1,2,3,4,5].each {|x| x*2}   #doesnt store the result on a 
+puts a.inspect
+
+b=a.select {|x| x>2}     #stores the result on b 
+puts b.inspect
+
+c=a.map {|x| x*2}    #reflects on c
+puts c.inspect
+
+d=a.collect{|x| x*2}    #same as map
+puts d.inspect
+
+a.each_with_index {|val,i|  print"#{i} #{val}\n"}  #doesnt store the result on a 
+# puts e.inspect
