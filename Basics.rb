@@ -68,3 +68,32 @@ end
     
 x = x==10?true:false
 puts x
+
+
+# ----------------------------------------------------------
+# case
+# ----------------------------------------------------------
+
+print "\ncase\n\n"
+
+x=10
+puts x
+case x
+when 10
+    puts "x==10"
+when 9
+    puts "x<10"
+else
+    puts "x>10"
+end
+
+case x
+when 10
+    puts "x==10"   #only this is matched
+when 10
+    puts "x<10"
+else
+    puts "x>10"
+# else
+#     puts "fgdfgf"     no two else statement 
+end
