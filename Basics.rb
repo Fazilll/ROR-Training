@@ -97,3 +97,69 @@ else
 # else
 #     puts "fgdfgf"     no two else statement 
 end
+
+
+# ----------------------------------------------------------
+# loop
+# ----------------------------------------------------------
+
+
+# for
+print "\nloop\n\n"
+
+for i in 1..10 do    #inclusive range   ..
+    print "#{i} "   
+end
+puts
+for i in 1...10 do   #excluding range   ...
+    print "#{i} "
+end
+puts
+
+x=[9,8,7,6,5,4,3,2,1]
+for i in x do
+    print "#{i} "
+end
+puts
+
+# while
+x=10
+i=0
+while i<x
+    print "#{x} " 
+    i+=1
+end
+puts
+
+
+#do while
+
+loop do
+    print "#{i} "
+    i-=1
+    if i<0
+        break
+    end
+end
+puts
+
+# until
+i=0
+until i==10    #ending codition should be given
+    print "#{i*2} "
+    i+=1
+end
+puts
+
+# break and next
+
+for i in 1..10 do
+    if i==9
+        break
+    elsif i==3
+        next
+    end
+    print "#{i} "
+    i+=1
+end
+puts
